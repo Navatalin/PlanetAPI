@@ -9,7 +9,7 @@ using PlanetAPI.Services;
 
 namespace PlanetAPI.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [Route("startrucker/api/v1/[controller]")]
     [ApiController]
 
     public class PlanetController : ControllerBase

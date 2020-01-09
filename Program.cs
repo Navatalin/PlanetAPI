@@ -21,7 +21,7 @@ namespace PlanetAPI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://localhost:6003");
+                    webBuilder.UseUrls("http://*:6003");
                 });
     }
 }
