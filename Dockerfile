@@ -7,7 +7,7 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/core/runtime:latest
+FROM mcr.microsoft.com/dotnet/core/sdk:latest
 WORKDIR /app
 COPY --from=build /app/out .
 ENTRYPOINT [ "dotnet", "PlanetAPI.dll" ]
