@@ -42,6 +42,14 @@ namespace PlanetAPI.Services{
                             BaseValue = 2,
                             Amount = 0,
                             MaxAmount = 20000
+                        },
+                        new ConsumableItem(){
+                            ItemId = 3,
+                            ItemName = "Metal",
+                            ConsumedPerHour = 2000,
+                            BaseValue = 10,
+                            Amount = 0,
+                            MaxAmount = 5000
                         }
                     },
                     LastUpdate = DateTime.Now
