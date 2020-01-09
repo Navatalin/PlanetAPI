@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: planetapi
+spec:
+  selector:
+    matchLabels:
+      app: planetapi
+  template:
+    metadata:
+      labels:
+        app: planetapi
+    spec:
+      containers:
+      - name: planetapi
+        image: navatalin/star-truckers-planetapi:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 6001
